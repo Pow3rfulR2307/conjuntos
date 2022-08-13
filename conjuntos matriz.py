@@ -7,7 +7,7 @@ Alterações foram feitas com o objetivo de evitar plagios e para adaptar aos co
 O CÓDIGO ABAIXO TEM COMO OBJETIVO LER ARQUIVOS DE TEXTO E BUSCAR TIPOS DE OPERAÇÕES ENTRE CONJUNTOS E OS CONJUNTOS A SEREM TRABALHADOS.
 A SAÍDA DO PROGRAMA CONTÉM A OPERAÇÃO, OS CONJUNTOS E A RESPOSTA.
 """
-#Abre o arquivo, só mudar o nome do arquvio de texto para iniciar
+#Abre o arquivo, só mudar o nome do arquvio de texto que quer analisar para iniciar
 opening=open('TEST2.txt')
 
 #Lê o arquivo e o separa em linhas.
