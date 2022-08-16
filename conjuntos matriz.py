@@ -1,14 +1,11 @@
 """
 ALUNO= Pedro Lunardelli Antunes
 
-Python for beginners, simpplilearn, stackoverflow e python pool foram usados para ajudar na formatação da saída, nenhum código foi copiado.
-Alterações foram feitas com o objetivo de evitar plagios e para adaptar aos conhecimentos do aluno (nenhum código de alto nível foi usado).
-
 O CÓDIGO ABAIXO TEM COMO OBJETIVO LER ARQUIVOS DE TEXTO E BUSCAR TIPOS DE OPERAÇÕES ENTRE CONJUNTOS E OS CONJUNTOS A SEREM TRABALHADOS.
 A SAÍDA DO PROGRAMA CONTÉM A OPERAÇÃO, OS CONJUNTOS E A RESPOSTA.
 """
-#Abre o arquivo, só mudar o nome do arquvio de texto que quer analisar para iniciar
-opening=open('TEST2.txt')
+#Abre o arquivo, só mudar o nome do arquvio de texto para iniciar
+opening=open('TEST.txt')
 
 #Lê o arquivo e o separa em linhas.
 readline=opening.read().splitlines()
@@ -21,8 +18,8 @@ z=3
 for i in range(int(readline[0])):
     row=[]
     row.append(readline[x][0])
-    row.append(readline[y])
-    row.append(readline[z])
+    row.append(readline[y].replace(' ',''))
+    row.append(readline[z].replace(' ',''))
     matrix.append(row)
     x+=3
     y+=3
@@ -32,10 +29,10 @@ for i in matrix:
 
 #Começo das operações, o "i" é limitado ao número de operações definido no começo do arquivo.
 for i in range(int(readline[0])):
+    
     #"anwser" é uma variável usada para a união, ela soma os dois conjuntos.
     anwser=matrix[i][1]+','+matrix[i][2]
     anwser=anwser.split(',')
-
     #"final" é uma lista para armazenar apenas o que sera imprimido de acordo com cada operação de conjuntos, ela reseta todo término de operação.
     final=[]
     
@@ -61,7 +58,8 @@ for i in range(int(readline[0])):
     elif matrix[i][0]=='C':
         for j in matrix[i][1].split(','):
             for h in matrix[i][2].split(','):
-                final.append('('+j+','+h+')')
+                if '('+j+','+h+')' not in final:
+                    final.append('('+j+','+h+')')
         final=','.join(final)
         a=("Produto cartesiano")
 
