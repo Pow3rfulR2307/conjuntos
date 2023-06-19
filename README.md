@@ -1,4 +1,2 @@
 # Conjuntos
-Trabalho do professor Frank sobre operações de conjuntos numéricos armazenados em um arquivo de texto. Os arquivos de entrada possuem vários conjuntos de valores, e cada um possui 
-uma letra em cima que representa o tipo de operação que deverá ser executada pelo programa em python. Por exemplo U é união, D é differença. O programa lê dois conjuntos e gera um 
-terceiro como resultado das operações dos dois anteriores.
+Trabalho do professor Frank de Alcantara sobre operações de conjuntos numéricos armazenados em um arquivo de texto. Os arquivos de entrada possuem vários conjuntos de valores, e a cada dois conjuntos, há uma letra em cima que representa o tipo de operação que deverá ser executada pelo programa em python. Por exemplo U é união, D é differença. O programa lê os dois conjuntos de cada operação e gera um terceiro como resultado das operações dos dois anteriores. No início dos arquivos há um número indicando a quantidade de operações que o programa deverá executar.
